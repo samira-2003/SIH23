@@ -18,13 +18,6 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:  Container(
-            child: const SizedBox(
-              width: 118,
-              height: 99,
-            ),
-          ),
-         
       backgroundColor: const Color.fromARGB(255, 33, 32, 32),
       appBar: AppBar(
         actions: const [
@@ -44,46 +37,292 @@ class _HomeState extends State<Home> {
           letterSpacing: 0.80,
         ),
       ),
-      body: const Column(
+      body:  Container(
+   
+    
+    child: Stack(
         children: [
-          SizedBox(
-            width: 500,
-            height: 10,
-          ),
-          Text(
-            "Experience the future of renewable energy with stimutech ",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 30,
-              fontFamily: 'Cinzel',
-              fontWeight: FontWeight.w700,
-              height: 0,
-              letterSpacing: 0.80,
+            Positioned(
+                left: 16,
+                top: 17,
+                child: Container(
+                    width: 78,
+                    height: 56,
+                    decoration: const BoxDecoration(
+                       
+                        ),
+                    ),
+                ),
+            
+            const Positioned(
+                left: 50,
+                top: 40,
+                child: SizedBox(
+                    width: 312,
+                    height: 100,
+                    child: Text(
+                        'Experience the future of renewable energy with stimutech ',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30,
+                            fontFamily: 'Cinzel',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                            letterSpacing: 0.80,
+                        ),
+                    ),
+                ),
             ),
-          ),
-          SizedBox(
-            width: 177,
-            height: 200,
-          ),
-          Text(
-            "OUTDOOR UNIT ",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 30,
-              fontFamily: 'Cinzel',
-              fontWeight: FontWeight.w700,
-              height: 0,
-              letterSpacing: 0.80,
+            const Positioned(
+                left: 120,
+                top: 400,
+                child: SizedBox(
+                    width: 177,
+                    height: 52,
+                    child: Text(
+                        'OUTDOOR UNIT',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontFamily: 'Cinzel',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                            letterSpacing: 0.80,
+                        ),
+                    ),
+                ),
             ),
-          ),
-          
+            Positioned(
+                left: 46,
+                top: 500,
+                child: Container(
+                    width: 118,
+                    height: 98,
+                    decoration: ShapeDecoration(
+                        color: Colors.black,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                        ),
+                    ),
+                ),
+            ),
+            const Positioned(
+                left: 20,
+                top: 570,
+                child: SizedBox(
+                    width: 177,
+                    height: 52,
+                    child: Text(
+                        'PRODUCT 1',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 10,
+                            fontFamily: 'Cinzel',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                            letterSpacing: 0.40,
+                        ),
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 220,
+                top: 500,
+                child: Container(
+                    width: 118,
+                    height: 98,
+                    decoration: ShapeDecoration(
+                        color: Colors.black,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                        ),
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 46,
+                top: 650,
+                child: Container(
+                    width: 118,
+                    height: 98,
+                    decoration: ShapeDecoration(
+                        color: Colors.black,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                        ),
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 220,
+                top: 650,
+                child: Container(
+                    width: 118,
+                    height: 98,
+                    decoration: ShapeDecoration(
+                        color: Colors.black,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                        ),
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 85,
+                top: 520,
+                child: Container(
+                    width: 45,
+                    height: 41,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('images/wind fan.png'),
+                            fit: BoxFit.cover,
+                        ),
+                        boxShadow: [
+                            BoxShadow(
+                                color: Colors.black,
+                                blurRadius: 2,
+                                offset: Offset(2, 2),
+                                spreadRadius: 0,
+                            )
+                        ],
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 260,
+                top: 520,
+                child: Container(
+                    width: 45,
+                    height: 41,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('images/wind fan.png'),
+                            fit: BoxFit.cover,
+                        ),
+                        boxShadow: [
+                            BoxShadow(
+                                color:  Colors.black,
+                                blurRadius: 2,
+                                offset: Offset(2, 2),
+                                spreadRadius: 0,
+                            )
+                        ],
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 260,
+                top: 670,
+                child: Container(
+                    width: 45,
+                    height: 41,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('images/wind fan.png'),
+                            fit: BoxFit.cover,
+                        ),
+                        boxShadow: [
+                            BoxShadow(
+                                color: Colors.black,
+                                blurRadius: 2,
+                                offset: Offset(2, 2),
+                                spreadRadius: 0,
+                            )
+                        ],
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 85,
+                top: 670,
+                child: Container(
+                    width: 45,
+                    height: 41,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('images/wind fan.png'),
+                            fit: BoxFit.cover,
+                        ),
+                        boxShadow: [
+                            BoxShadow(
+                                color:  Colors.black,
+                                blurRadius: 2,
+                                offset: Offset(2, 2),
+                                spreadRadius: 0,
+                            )
+                        ],
+                    ),
+                ),
+            ),
+            const Positioned(
+                left: 195,
+                top: 570,
+                child: SizedBox(
+                    width: 177,
+                    height: 52,
+                    child: Text(
+                        'PRODUCT 2',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 10,
+                            fontFamily: 'Cinzel',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                            letterSpacing: 0.40,
+                        ),
+                    ),
+                ),
+            ),
+            const Positioned(
+                left: 195,
+                top: 720,
+                child: SizedBox(
+                    width: 177,
+                    height: 52,
+                    child: Text(
+                        'PRODUCT 4\n',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 10,
+                            fontFamily: 'Cinzel',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                            letterSpacing: 0.40,
+                        ),
+                    ),
+                ),
+            ),
+            const Positioned(
+                left: 20,
+                top: 720,
+                child: SizedBox(
+                    width: 177,
+                    height: 52,
+                    child: Text(
+                        'PRODUCT 3\n',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 10,
+                            fontFamily: 'Cinzel',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                            letterSpacing: 0.40,
+                        ),
+                    ),
+                ),
+            ),
         ],
-      ),
+    ),
+)
+      
+      
     );
-
-    // center
-    //AppBar
   }
 }
