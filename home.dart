@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:get/route_manager.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-
+import 'product1.dart';
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -38,8 +38,6 @@ class _HomeState extends State<Home> {
         ),
       ),
       body:  Container(
-   
-    
     child: Stack(
         children: [
             Positioned(
@@ -108,24 +106,29 @@ class _HomeState extends State<Home> {
                     ),
                 ),
             ),
-            const Positioned(
+            Positioned(
                 left: 20,
                 top: 570,
-                child: SizedBox(
-                    width: 177,
-                    height: 52,
-                    child: Text(
-                        'PRODUCT 1',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 10,
-                            fontFamily: 'Cinzel',
-                            fontWeight: FontWeight.w700,
-                            height: 0,
-                            letterSpacing: 0.40,
-                        ),
-                    ),
+                child: InkWell(
+                  onTap: () {
+                    Get.to(()=>const Product1());
+                  },
+                  child: const SizedBox(
+                      width: 177,
+                      height: 52,
+                      child: Text(
+                          'PRODUCT 1',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 10,
+                              fontFamily: 'Cinzel',
+                              fontWeight: FontWeight.w700,
+                              height: 0,
+                              letterSpacing: 0.40,
+                          ),
+                      ),
+                  ),
                 ),
             ),
             Positioned(
