@@ -1,3 +1,6 @@
+import 'package:first_app/batterylevelP1.dart';
+import 'package:first_app/generatorRuntimeP1.dart';
+import 'package:first_app/weatherP1.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/route_manager.dart';
 import 'package:flutter/material.dart';
@@ -39,15 +42,129 @@ class _Product1State extends State<Product1> {
       body: Container(
         child: Stack(
           children: [
+            
+            Positioned(
+                left: 16,
+                top: 17,
+                child: Container(
+                    width: 78,
+                    height: 56,
+                    decoration: const BoxDecoration(
+                       
+                        ),
+                    ),
+                ),
+            
+            const Positioned(
+                left: 50,
+                top: 40,
+                child: SizedBox(
+                    width: 312,
+                    height: 100,
+                    child: Text(
+                        'PRODUCT 1 ',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 30,
+                            fontFamily: 'Cinzel',
+                            fontWeight: FontWeight.w700,
+                            height: 0,
+                            letterSpacing: 0.80,
+                        ),
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 46,
+                top: 500,
+                child: Container(
+                    width: 118,
+                    height: 98,
+                    decoration: ShapeDecoration(
+                        color: Colors.black,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                        ),
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 20,
+                top: 570,
+                child: InkWell(
+                  onTap: () {
+                    Get.to(()=>const BatterylevelP1());
+                  },
+                  child: const SizedBox(
+                      width: 177,
+                      height: 52,
+                      child: Text(
+                          'BATTERY LEVEL',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 10,
+                              fontFamily: 'Cinzel',
+                              fontWeight: FontWeight.w700,
+                              height: 0,
+                              letterSpacing: 0.40,
+                          ),
+                      ),
+                  ),
+                ),
+            ),
+            Positioned(
+                left: 220,
+                top: 500,
+                child: Container(
+                    width: 118,
+                    height: 98,
+                    decoration: ShapeDecoration(
+                        color: Colors.black,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                        ),
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 46,
+                top: 650,
+                child: Container(
+                    width: 118,
+                    height: 98,
+                    decoration: ShapeDecoration(
+                        color: Colors.black,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                        ),
+                    ),
+                ),
+            ),
+            Positioned(
+                left: 220,
+                top: 650,
+                child: Container(
+                    width: 118,
+                    height: 98,
+                    decoration: ShapeDecoration(
+                        color: Colors.black,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                        ),
+                    ),
+                ),
+            ),
             Positioned(
                 left: 85,
-                top: 350,
+                top: 520,
                 child: Container(
                     width: 45,
                     height: 41,
                     decoration: const BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('images/wind fan.png'),
+                            image: AssetImage('images/battery.png'),
                             fit: BoxFit.cover,
                         ),
                         boxShadow: [
@@ -62,184 +179,151 @@ class _Product1State extends State<Product1> {
                 ),
             ),
             Positioned(
-              left: 307,
-              top: 37,
-              child: Container(
-                width: 24,
-                height: 24,
-                clipBehavior: Clip.antiAlias,
-                decoration: const BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0xFF565151),
-                      blurRadius: 4,
-                      offset: Offset(0, 4),
-                      spreadRadius: 0,
-                    )
-                  ],
+                left: 260,
+                top: 520,
+                child: Container(
+                    width: 45,
+                    height: 41,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('images/runtime.png'),
+                            fit: BoxFit.cover,
+                        ),
+                        boxShadow: [
+                            BoxShadow(
+                                color:  Colors.black,
+                                blurRadius: 2,
+                                offset: Offset(2, 2),
+                                spreadRadius: 0,
+                            )
+                        ],
+                    ),
                 ),
-                child: const Stack(children: []),
-              ),
-            ),
-            const Positioned(
-              left: 110,
-              top: 50,
-              child: SizedBox(
-                width: 177,
-                height: 52,
-                child: Text(
-                  'PRODUCT 1',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 25,
-                    fontFamily: 'Cinzel',
-                    fontWeight: FontWeight.w700,
-                    height: 0,
-                    letterSpacing: 0.80,
-                  ),
-                ),
-              ),
             ),
             Positioned(
-              left: 44,
-              top: 350,
-              child: Container(
-                width: 118,
-                height: 98,
-                decoration: ShapeDecoration(
-                  color: Colors.black,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
+                left: 260,
+                top: 670,
+                child: Container(
+                    width: 45,
+                    height: 41,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('images/healthcheckup.png'),
+                            fit: BoxFit.cover,
+                        ),
+                        boxShadow: [
+                            BoxShadow(
+                                color: Colors.black,
+                                blurRadius: 2,
+                                offset: Offset(2, 2),
+                                spreadRadius: 0,
+                            )
+                        ],
+                    ),
                 ),
-              ),
-            ),
-            const Positioned(
-              left: 18,
-              top: 420,
-              child: SizedBox(
-                width: 177,
-                height: 52,
-                child: Text(
-                  'BATTERY LEVEL',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 10,
-                    fontFamily: 'Cinzel',
-                    fontWeight: FontWeight.w700,
-                    height: 0,
-                    letterSpacing: 0.40,
-                  ),
-                ),
-              ),
             ),
             Positioned(
-              left: 230,
-              top: 350,
-              child: Container(
-                width: 118,
-                height: 98,
-                decoration: ShapeDecoration(
-                  color: Colors.black,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
+                left: 85,
+                top: 670,
+                child: Container(
+                    width: 45,
+                    height: 41,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('images/weather.png'),
+                            fit: BoxFit.cover,
+                        ),
+                        boxShadow: [
+                            BoxShadow(
+                                color:  Colors.black,
+                                blurRadius: 2,
+                                offset: Offset(2, 2),
+                                spreadRadius: 0,
+                            )
+                        ],
+                    ),
+                ),
+            ),
+             Positioned(
+                left: 195,
+                top: 570,
+                child: InkWell(
+                  onTap: () {
+                    Get.to(()=>const GeneratorRuntimeP1());
+                  },
+                  child: const SizedBox(
+                      width: 177,
+                      height: 52,
+                      child: Text(
+                          'GENERATOR RUNTIME',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 8,
+                              fontFamily: 'Cinzel',
+                              fontWeight: FontWeight.w700,
+                              height: 0,
+                              letterSpacing: 0.40,
+                          ),
+                      ),
                   ),
                 ),
-              ),
             ),
-            Positioned(
-              left: 44,
-              top: 500,
-              child: Container(
-                width: 118,
-                height: 98,
-                decoration: ShapeDecoration(
-                  color: Colors.black,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
+             Positioned(
+                left: 20,
+                top: 720,
+                child: InkWell(
+                  onTap: () {
+                    Get.to(()=>const WeatherP1());
+                  },
+                  child: const SizedBox(
+                      width: 177,
+                      height: 52,
+                      child: Text(
+                          'WEATHER',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 10,
+                              fontFamily: 'Cinzel',
+                              fontWeight: FontWeight.w700,
+                              height: 0,
+                              letterSpacing: 0.40,
+                          ),
+                      ),
                   ),
                 ),
-              ),
             ),
-            const Positioned(
-              left: 16,
-              top: 570,
-              child: SizedBox(
-                width: 177,
-                height: 52,
-                child: Text(
-                  'WEATHER',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 8,
-                    fontFamily: 'Cinzel',
-                    fontWeight: FontWeight.w700,
-                    height: 0,
-                    letterSpacing: 0.32,
+             Positioned(
+                left: 195,
+                top: 720,
+                child: InkWell(
+                  onTap: () {
+                    Get.to(()=>const Product1());
+                  },
+                  child: const SizedBox(
+                      width: 177,
+                      height: 52,
+                      child: Text(
+                          'HEALTH CHECKUP',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 10,
+                              fontFamily: 'Cinzel',
+                              fontWeight: FontWeight.w700,
+                              height: 0,
+                              letterSpacing: 0.40,
+                          ),
+                      ),
                   ),
                 ),
-              ),
             ),
-            Positioned(
-              left: 230,
-              top: 500,
-              child: Container(
-                width: 118,
-                height: 98,
-                decoration: ShapeDecoration(
-                  color: Colors.black,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                ),
-              ),
-            ),
-            const Positioned(
-              left: 200,
-              top: 420,
-              child: SizedBox(
-                width: 177,
-                height: 52,
-                child: Text(
-                  'GENERATOR RUNTIME',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 8,
-                    fontFamily: 'Cinzel',
-                    fontWeight: FontWeight.w700,
-                    height: 0,
-                    letterSpacing: 0.32,
-                  ),
-                ),
-              ),
-            ),
-            const Positioned(
-              left: 200,
-              top: 570,
-              child: SizedBox(
-                width: 177,
-                height: 52,
-                child: Text(
-                  'HEALTH CHECKUP',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 8,
-                    fontFamily: 'Cinzel',
-                    fontWeight: FontWeight.w700,
-                    height: 0,
-                    letterSpacing: 0.32,
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
-      ),
+        ],
+    ),
+)
+      
+      
     );
   }
 }
