@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       home: Scaffold(
-          backgroundColor: const Color.fromARGB(255, 33, 32, 32),
+          backgroundColor: Color.fromARGB(255, 5, 5, 5),
           body: Column(
             children: [
               const SizedBox(

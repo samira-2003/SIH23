@@ -29,7 +29,7 @@ class _LoginDemoState extends State<LoginDemo> {
   @override 
   Widget build(BuildContext context) { 
     return Scaffold( 
-      backgroundColor:  const Color.fromARGB(255, 33, 32, 32),
+      backgroundColor:  Color.fromARGB(255, 0, 0, 0),
        
       body: SingleChildScrollView( 
         child: Column( 

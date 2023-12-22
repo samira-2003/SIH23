@@ -1,25 +1,26 @@
-import 'dart:ui';
-import 'package:first_app/product1.dart';
-import 'package:first_app/product2.dart';
-import 'package:flutter/material.dart';
-import 'login.dart';
+import 'package:first_app/batterylevelP1.dart';
+import 'package:first_app/generatorRuntimeP1.dart';
+import 'package:first_app/weatherP1.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:get/route_manager.dart';
+import 'package:flutter/material.dart';
+import 'dart:ui';
+import 'home.dart';
+import 'package:first_app/product1.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'product1.dart';
-class Home extends StatefulWidget {
-  const Home({super.key});
+
+class Product2 extends StatefulWidget {
+  const Product2({super.key});
 
   @override
-  State<Home> createState() => _HomeState();
+  State<Product2> createState() => _Product2State();
 }
 
-class _HomeState extends State<Home> {
+class _Product2State extends State<Product2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 32, 32, 32),
+      backgroundColor: const Color.fromARGB(255, 33, 32, 32),
       appBar: AppBar(
         actions: const [
           Icon(
@@ -27,7 +28,7 @@ class _HomeState extends State<Home> {
             color: Color(0xFFF7EF89),
           ),
         ],
-        backgroundColor: Color.fromARGB(0, 0, 0, 0),
+        backgroundColor: const Color.fromARGB(0, 2, 2, 2),
         title: const Text('STIMUTECH'),
         titleTextStyle: const TextStyle(
           color: Color(0xFFF7EF89),
@@ -38,9 +39,10 @@ class _HomeState extends State<Home> {
           letterSpacing: 0.80,
         ),
       ),
-      body:  Container(
-    child: Stack(
-        children: [
+      body: Container(
+        child: Stack(
+          children: [
+            
             Positioned(
                 left: 16,
                 top: 17,
@@ -60,7 +62,7 @@ class _HomeState extends State<Home> {
                     width: 312,
                     height: 100,
                     child: Text(
-                        'Experience the future of renewable energy with stimutech ',
+                        'PRODUCT 1 ',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Colors.white,
@@ -73,26 +75,6 @@ class _HomeState extends State<Home> {
                     ),
                 ),
             ),
-            const Positioned(
-                left: 120,
-                top: 400,
-                child: SizedBox(
-                    width: 177,
-                    height: 52,
-                    child: Text(
-                        'OUTDOOR UNIT',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20,
-                            fontFamily: 'Cinzel',
-                            fontWeight: FontWeight.w700,
-                            height: 0,
-                            letterSpacing: 0.80,
-                        ),
-                    ),
-                ),
-            ),
             Positioned(
                 left: 46,
                 top: 500,
@@ -112,13 +94,13 @@ class _HomeState extends State<Home> {
                 top: 570,
                 child: InkWell(
                   onTap: () {
-                    Get.to(()=>const Product1());
+                    Get.to(()=>const BatterylevelP1());
                   },
                   child: const SizedBox(
                       width: 177,
                       height: 52,
                       child: Text(
-                          'PRODUCT 1',
+                          'BATTERY LEVEL',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Colors.white,
@@ -182,29 +164,7 @@ class _HomeState extends State<Home> {
                     height: 41,
                     decoration: const BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('images/wind fan.png'),
-                            fit: BoxFit.cover,
-                        ),
-                        boxShadow: [
-                            BoxShadow(
-                                color: Colors.black,
-                                blurRadius: 2,
-                                offset: Offset(2, 2),
-                                spreadRadius: 0,
-                            )
-                        ],
-                    ),
-                ),
-            ),
-            Positioned(
-                left: 50,
-                top: 180,
-                child: Container(
-                    width: 300,
-                    height: 290,
-                    decoration: const BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage('images/ductedturbine.png'),
+                            image: AssetImage('images/battery.png'),
                             fit: BoxFit.cover,
                         ),
                         boxShadow: [
@@ -226,7 +186,7 @@ class _HomeState extends State<Home> {
                     height: 41,
                     decoration: const BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('images/wind fan.png'),
+                            image: AssetImage('images/runtime.png'),
                             fit: BoxFit.cover,
                         ),
                         boxShadow: [
@@ -248,7 +208,7 @@ class _HomeState extends State<Home> {
                     height: 41,
                     decoration: const BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('images/wind fan.png'),
+                            image: AssetImage('images/healthcheckup.png'),
                             fit: BoxFit.cover,
                         ),
                         boxShadow: [
@@ -270,7 +230,7 @@ class _HomeState extends State<Home> {
                     height: 41,
                     decoration: const BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('images/wind fan.png'),
+                            image: AssetImage('images/weather.png'),
                             fit: BoxFit.cover,
                         ),
                         boxShadow: [
@@ -284,18 +244,43 @@ class _HomeState extends State<Home> {
                     ),
                 ),
             ),
-            Positioned(
-                left: 20,
+             Positioned(
+                left: 195,
                 top: 570,
                 child: InkWell(
                   onTap: () {
-                    Get.to(()=>const Product2());
+                    Get.to(()=>const GeneratorRuntimeP1());
                   },
                   child: const SizedBox(
                       width: 177,
                       height: 52,
                       child: Text(
-                          'PRODUCT 2',
+                          'GENERATOR RUNTIME',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 8,
+                              fontFamily: 'Cinzel',
+                              fontWeight: FontWeight.w700,
+                              height: 0,
+                              letterSpacing: 0.40,
+                          ),
+                      ),
+                  ),
+                ),
+            ),
+             Positioned(
+                left: 20,
+                top: 720,
+                child: InkWell(
+                  onTap: () {
+                    Get.to(()=>const WeatherP1());
+                  },
+                  child: const SizedBox(
+                      width: 177,
+                      height: 52,
+                      child: Text(
+                          'WEATHER',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Colors.white,
@@ -309,9 +294,9 @@ class _HomeState extends State<Home> {
                   ),
                 ),
             ),
-            Positioned(
-                left: 20,
-                top: 570,
+             Positioned(
+                left: 195,
+                top: 720,
                 child: InkWell(
                   onTap: () {
                     Get.to(()=>const Product1());
@@ -320,32 +305,7 @@ class _HomeState extends State<Home> {
                       width: 177,
                       height: 52,
                       child: Text(
-                          'PRODUCT 4',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 10,
-                              fontFamily: 'Cinzel',
-                              fontWeight: FontWeight.w700,
-                              height: 0,
-                              letterSpacing: 0.40,
-                          ),
-                      ),
-                  ),
-                ),
-            ),
-            Positioned(
-                left: 20,
-                top: 570,
-                child: InkWell(
-                  onTap: () {
-                    Get.to(()=>const Product1());
-                  },
-                  child: const SizedBox(
-                      width: 177,
-                      height: 52,
-                      child: Text(
-                          'PRODUCT 2',
+                          'HEALTH CHECKUP',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Colors.white,
